@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - SleekShop</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-2xl font-bold text-blue-600">SleekShop</a>
+                </div>
+                
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">Home</a>
+                    <a href="shop.html" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">Shop</a>
+                    <a href="about.html" class="text-gray-900 hover:text-blue-600 px-3 py-2 text-sm font-medium">About</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">Contact</a>
+                </nav>
+                
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="cart.html" class="relative p-2 text-gray-700 hover:text-blue-600">
+                        <i class="fas fa-shopping-cart text-xl"></i>
+                        <span id="cartCount" class="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Content -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <!-- Hero Section -->
+        <div class="text-center mb-16">
+            <h1 class="text-4xl font-bold text-gray-900 mb-4">About SleekShop</h1>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">We're passionate about bringing you the best products at unbeatable prices, with exceptional customer service that makes shopping a pleasure.</p>
+        </div>
+
+        <!-- Story Section -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+            <div>
+                <h2 class="text-3xl font-bold text-gray-900 mb-6">Our Story</h2>
+                <p class="text-gray-600 mb-4">Founded in 2025, SleekShop is a small startup with a big dream: to revolutionize online shopping by making it more accessible, affordable, and enjoyable for everyone.</p>
+                <p class="text-gray-600 mb-4">What started as a passion project has grown into a trusted e-commerce platform serving thousands of customers worldwide. We've built our reputation on quality products, competitive prices, and outstanding customer service.</p>
+                <p class="text-gray-600">Today, we continue to innovate and expand our offerings, always keeping our customers' needs at the heart of everything we do.</p>
+            </div>
+            <div class="bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg p-8 text-white">
+                <div class="grid grid-cols-2 gap-6 text-center">
+                    <div>
+                        <div class="text-3xl font-bold mb-2">50K+</div>
+                        <div class="text-sm opacity-90">Happy Customers</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold mb-2">10K+</div>
+                        <div class="text-sm opacity-90">Products</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold mb-2">99%</div>
+                        <div class="text-sm opacity-90">Satisfaction Rate</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold mb-2">24/7</div>
+                        <div class="text-sm opacity-90">Support</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Values Section -->
+        <div class="mb-16">
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Our Values</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-heart text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Customer First</h3>
+                    <p class="text-gray-600">Every decision we make is guided by what's best for our customers. Your satisfaction is our top priority.</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-leaf text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Sustainability</h3>
+                    <p class="text-gray-600">We're committed to sustainable practices and partnering with eco-friendly brands to protect our planet.</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-lightbulb text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Innovation</h3>
+                    <p class="text-gray-600">We continuously innovate to improve your shopping experience with the latest technology and features.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Team Section -->
+        <div class="text-center">
+            <h2 class="text-3xl font-bold text-gray-900 mb-12">Meet Our Team</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <div class="w-24 h-24 bg-gray-300 rounded-full mx-auto mb-4"><img src="/Asset/placeholder-user.jpg" alt="Allen Elochukwu"></div>
+                    <h3 class="text-xl font-semibold mb-2">Allen Elochukwu</h3>
+                    <p class="text-blue-600 mb-3">CEO & Founder</p>
+                    <p class="text-gray-600 text-sm">Passionate about creating exceptional customer experiences and building meaningful connections.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <div class="w-24 h-24 bg-gray-300 rounded-full mx-auto mb-4"><img src="/Asset/placeholder-user.jpg" alt="Bright Onyedika"></div>
+                    <h3 class="text-xl font-semibold mb-2">Bright Onyedika</h3>
+                    <p class="text-blue-600 mb-3">CTO</p>
+                    <p class="text-gray-600 text-sm">Tech enthusiast focused on building scalable solutions and innovative features for our platform.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <div class="w-24 h-24 bg-gray-300 rounded-full mx-auto mb-4"><img src="/Asset/placeholder-user.jpg" alt="Chidi Authur"></div>
+                    <h3 class="text-xl font-semibold mb-2">Chidi Authur</h3>
+                    <p class="text-blue-600 mb-3">Head of Product</p>
+                    <p class="text-gray-600 text-sm">Dedicated to ensuring every customer has an amazing experience with our products and services.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">SleekShop</h3>
+                    <p class="text-gray-400">Your trusted online shopping destination with quality products and excellent service.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <!-- <li><a href="/index.html" class="text-gray-400 hover:text-white">Home</a></li> -->
+                        <li><a href="shop.html" class="text-gray-400 hover:text-white">Shop</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">About</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Info</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><i class="fas fa-phone mr-2"></i> +234 816 858 1064</li>
+                        <li><i class="fas fa-envelope mr-2"></i> info@sleekshop.com</li>
+                        <li><i class="fas fa-map-marker-alt mr-2"></i> Badore Ajah, Lagos, Nigeria</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="https://x.com/ElochiBlog" class="text-gray-400 hover:text-white text-xl"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com" class="text-gray-400 hover:text-white text-xl"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/allen-elochukwu" class="text-gray-400 hover:text-white text-xl"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-500 mt-5 pt-5 text-center text-gray-500">
+                <p>&copy; 2025 <a href="https://allenelochukwu.com/">Allen's Inc.</a> All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/cart.js"></script>
+</body>
+</html>

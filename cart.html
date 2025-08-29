@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - SleekShop</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-2xl font-bold text-blue-600">SleekShop</a>
+                </div>
+                
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">Home</a>
+                    <a href="shop.html" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">Shop</a>
+                    <a href="about.html" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">About</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">Contact</a>
+                </nav>
+                
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="cart.html" class="relative p-2 text-gray-700 hover:text-blue-600">
+                        <i class="fas fa-shopping-cart text-xl"></i>
+                        <span id="cartCount" class="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Cart Content -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <h1 class="text-3xl font-bold mb-8">Shopping Cart</h1>
+        
+        <div id="cartContent" class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <!-- Cart items will be loaded here -->
+        </div>
+        
+        <!-- Empty Cart State -->
+        <div id="emptyCart" class="text-center py-16 hidden">
+            <i class="fas fa-shopping-cart text-6xl text-gray-300 mb-4"></i>
+            <h2 class="text-2xl font-semibold text-gray-600 mb-4">Your cart is empty</h2>
+            <p class="text-gray-500 mb-8">Looks like you haven't added any items to your cart yet.</p>
+            <a href="shop.html" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition duration-300">Continue Shopping</a>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">SleekShop</h3>
+                    <p class="text-gray-400">Your trusted online shopping destination with quality products and excellent service.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <!-- <li><a href="/index.html" class="text-gray-400 hover:text-white">Home</a></li> -->
+                        <li><a href="shop.html" class="text-gray-400 hover:text-white">Shop</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">About</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Info</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><i class="fas fa-phone mr-2"></i> +234 816 858 1064</li>
+                        <li><i class="fas fa-envelope mr-2"></i> info@sleekshop.com</li>
+                        <li><i class="fas fa-map-marker-alt mr-2"></i> Badore Ajah, Lagos, Nigeria</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="https://x.com/ElochiBlog" class="text-gray-400 hover:text-white text-xl"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com" class="text-gray-400 hover:text-white text-xl"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/allen-elochukwu" class="text-gray-400 hover:text-white text-xl"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-500 mt-5 pt-5 text-center text-gray-500">
+                <p>&copy; 2025 <a href="https://allenelochukwu.com/">Allen's Inc.</a> All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/cart.js"></script>
+    <script src="scripts/api.js"></script>
+    <script src="scripts/cart-page.js"></script>
+</body>
+</html>
